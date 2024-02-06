@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Hide Scroll bar */
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+body {
+  background-image: url(../../assets/bg.jpg);
+  background-size: 200vmax;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  width: 100%;
+}
+
+nav img.brand {
+  filter: invert(80%) contrast(75%);
+}
+
+.navbar-nav .nav-item a {
+  margin-left: 2vh;
+  font-size: 14px;
+}
+
+.contain {
+  width: 100%;
+  padding: 0 10vmin;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: inherit;
+}
+
+.features {
+  width: 100%;
+  padding: inherit;
+  background-color: white;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+
+button.btn {
+  font-family: "Oswald", sans-serif;
+  background-color: black;
+}
+
+div.layouts {
+  padding: inherit;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+
+div.brand img {
+  max-width: 10vh;
+}
+
+div.brand img#apple {
+  filter: invert(48%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%);
+}
+
+div.brand img#ibm {
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+div.brand .row .col-12 {
+  width: 100%;
+  text-align: justify;
+}
+
+div.content-shop {
+  font-family: "Oswald", sans-serif;
+}
+
+div.content-shop .content-img {
+  width: 100%;
+}
+
+div.content-shop img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  aspect-ratio: 4/3;
+  max-width: 100%;
+  max-height: 80%;
+}
+
+div.content-shop img.bg34 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  aspect-ratio: 4/3;
+  max-width: 100%;
+  max-height: 75%;
+}
+
+footer div.text-hit {
+  margin-right: 10px;
+}
+
+.footer-bg .btn {
+  background-color: white;
+}
+
+.footer-bg .btn:hover {
+  background-color: rgb(188, 188, 188);
+  color: rgb(0, 0, 0);
+}
+
+footer div.bottom-footer {
+  background-color: rgb(17, 17, 17);
+}
+
+footer div.bottom-footer img.footer-brand {
+  width: 50px;
+}
+
+footer div.copy {
+  font-size: 14px;
+}
+
+footer div.bottom-footer > *:not(:nth-child(3n)) {
+  margin-bottom: 20px;
+}
+
+footer div.sosial-medias i {
+  color: white;
+  margin: 0 20px;
+  transition: ease-in 0.1s;
+}
+
+footer div.sosial-medias i:hover {
+  color: rgb(172, 172, 172);
+}
+
+footer span.vr {
+  transform: rotate(90deg);
+}
+
+/* Custom responsive */
+@media only screen and (max-width: 768px) {
+  li.search i {
+    display: none;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  div.brand img {
+    max-width: 6vh;
+    margin-bottom: 50px;
+  }
+
+  div.brand .row .col-12 {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .footer-bg div {
+    margin-bottom: 2%;
+  }
+
+  footer div.text-hit {
+    margin-right: 0;
+  }
+}
+
+/* End of custom responsive */
